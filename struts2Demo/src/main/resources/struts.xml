@@ -62,7 +62,7 @@
              class: 对应的类的路径
              method: 调用Action中的方法名
         -->
-        <action name="addPerson" class="com.alison.struts2.AddPersonAction">
+        <action name="addPerson" class="com.alison.struts2.AddPersonAction" method="addPerson">
         	<!-- 引用拦截器
         	<interceptor-ref name=""></interceptor-ref>  -->
         	<!-- 节点配置
@@ -74,6 +74,10 @@
          		name即属性值，相当于注射了，要求有get/set方法
          	 -->
          	<param name="url">www.baidu.com</param>
+        </action>
+        
+        <action name="listPeople" class="com.alison.struts2.AddPersonAction">
+        	<result name="listAll" type="dispatcher">/listAllPeople.jsp</result>
         </action>
         
         <action name="index" class="com.alison.struts2.IndexAction">

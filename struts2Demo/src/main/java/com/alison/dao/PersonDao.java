@@ -2,6 +2,7 @@ package com.alison.dao;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import com.alison.mybatis.*;
 import com.alison.pojo.Person;
@@ -27,6 +28,12 @@ public class PersonDao {
 		System.out.println(1111);
 		mapper.addPerson(p);
 		System.out.println("调用mapper添加人员成功");
+	}
+	
+	public List<Person> listAll(){
+		SqlSession session = ssf.openSession();
+		PersonMapper mapper = session.getMapper(PersonMapper.class);
+		return mapper.findAll();
 	}
 	
 }
