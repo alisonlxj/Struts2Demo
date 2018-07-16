@@ -57,7 +57,7 @@
              class: 对应的类的路径
              method: 调用Action中的方法名
         -->
-        <action name="addPerson" class="com.alison.struts2.AddPersonAction" method="addPerson">
+        <action name="addPerson" class="com.alison.struts2.PersonAction" method="addPerson">
         	<!-- 引用拦截器
         	<interceptor-ref name=""></interceptor-ref>  -->
         	<!-- 节点配置

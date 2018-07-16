@@ -2,16 +2,14 @@ package com.alison.pojo;
 
 public class Hobby {
 
-	private int id_h;
 	private String hobby;
 	private int person_id;
 	
-	
-	public int getId_h() {
-		return id_h;
-	}
-	public void setId_h(int id_h) {
-		this.id_h = id_h;
+	public Hobby(){};
+	public Hobby(String h, int id) {
+		// TODO Auto-generated constructor stub
+		this.hobby = h;
+		this.person_id = id;
 	}
 	public String getHobby() {
 		return hobby;

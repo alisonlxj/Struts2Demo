@@ -24,6 +24,14 @@ public class ListPeopleAction extends ActionSupport{
 		System.out.println("开始返回view页面");
 		return "listAll";
 	}
+
+	public List<Person> getPeople() {
+		return people;
+	}
+
+	public void setPeople(List<Person> people) {
+		this.people = people;
+	}
 	
 	
 	

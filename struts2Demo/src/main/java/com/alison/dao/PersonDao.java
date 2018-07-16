@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.util.List;
 
 import com.alison.mybatis.*;
+import com.alison.pojo.Hobby;
 import com.alison.pojo.Person;
 
 import org.apache.ibatis.io.Resources;
@@ -34,6 +35,14 @@ public class PersonDao {
 		SqlSession session = ssf.openSession();
 		PersonMapper mapper = session.getMapper(PersonMapper.class);
 		return mapper.findAll();
+	}
+
+	public void addHobby(Hobby h, int id) {
+		// TODO Auto-generated method stub
+		SqlSession session = ssf.openSession();
+		PersonMapper mapper = session.getMapper(PersonMapper.class);
+		
+//		return mapper.findAll();
 	}
 	
 }

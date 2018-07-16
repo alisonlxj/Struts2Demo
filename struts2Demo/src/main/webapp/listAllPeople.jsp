@@ -16,13 +16,15 @@
 	<hr>
 	<h3>成功找到了所有人员</h3>
 	
-	<s:iterator value="people" status="person">
-		id：<s:property value="person.id" />
-		姓名：<s:property value="person.name" />
-		年龄：<s:property value="person.age" />
-		生日：<s:property value="person.birthday" />
-		地址：<s:property value="person.address" />
+	<s:iterator value='people' var="person">
+		<br>id：${person.id}<br>
+		姓名：${person.name }<br>
+		年龄：${person.age }<br>
+		生日：${person.birthday }<br>
+		地址：${person.address}
+		<hr style="width='30%';">
 	</s:iterator>
+
 	
 </body>
 

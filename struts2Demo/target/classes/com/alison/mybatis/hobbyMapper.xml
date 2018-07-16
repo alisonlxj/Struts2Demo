@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="mapper.UserMapper">
+<mapper namespace="com.alison.mybatis.HobbyMapper">
 	
 	
 	<!-- 根据用户名称模糊查询用户信息，可能返回多条
@@ -13,12 +13,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	使用${}拼接sql，引起 sql注入
 	#{value}：接收输入 参数的内容，
 	-->
-	<select id="findUserByName" parameterType="java.lang.String" resultType="pojo.User">
-		select * from user where name like '%${value}%'
+	<select id="findHobbiesByPersonId" parameterType="int" resultType="java.lang.String">
+		select * from tb_hobby where person_id=#{value}
 	</select>
 	
-	<select id="listAllUsers" resultType="pojo.User">
-		select * from user
-	</select>
+	<insert id="addHobby" parameterType="com.alison.pojo.Hobby">	<!-- 多参数，parameterType可以不写，直接用#｛num｝代替第几个参数 -->
+		insert into tb_hobby (hobby,person_id) values (#{hobby},#{person_id})	<!-- 对于包装类类型，直接写属性值 -->
+	</insert>
 
 </mapper>
