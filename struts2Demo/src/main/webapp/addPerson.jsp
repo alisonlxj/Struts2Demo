@@ -14,11 +14,11 @@
 	<hr>
 	
 	<form action="addPerson" method="post">
-		id：<input type="text" name="id"> <br>
-		姓名:<input type="text" name="name"> <br/>
-		年龄: <input type="text" name="age"> <br>
-		生日：<input type="text" name="birthday"> <br>
-		地址:<input type="text" name="address"> <br>
+		id：<input type="text" name="person.id"> <br>
+		姓名:<input type="text" name="person.name"> <br/>
+		年龄: <input type="text" name="person.age"> <br>
+		生日：<input type="text" name="person.birthday"> <br>
+		地址:<input type="text" name="person.address"> <br>
 		<input type="submit" value="提交">
 	</form>
 	

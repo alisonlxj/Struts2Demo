@@ -15,7 +15,7 @@
 
 
 <!-- struts.xml配置文件存放位置有要求：
-	1、若是普通web项目结构，在src直接下级存放struts.xml(与其他包统计)，不能在某包下
+	1、若是普通web项目结构，在src直接下级存放struts.xml(与其他包同级)，不能在某包下
 	2、若是Maven结构，则需要放在webapp/WEB-INF/classes/之下，或者直接放在src/main/java(src/main/resource)之下，与包同级
 	这样struts.xml文件才能被识别是struts2的核心配置文件
  -->

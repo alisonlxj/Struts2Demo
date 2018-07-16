@@ -45,18 +45,13 @@
      	 <!-- 定义默认的拦截器 每个Action都会自动引用;如果Action中引用了其它的拦截器 默认的拦截器将无效 
         <default-interceptor-ref name="mystack"></default-interceptor-ref>
      	-->
-     	
      	<!-- 全局的result配置 
      	<global-results>
      		<result name="input">/error.jsp</result>
      	</global-results>
      	-->
-     	
      	<global-allowed-methods></global-allowed-methods>
-     	
      	<!--  <global-exception-mappings></global-exception-mappings>    --> 
-     	
-     	
      	 <!-- Action配置 一个Action可以被多次映射(只要action配置中的name不同)
              name：action名称
              class: 对应的类的路径
@@ -73,14 +68,13 @@
          	<!-- 参数设置
          		name即属性值，相当于注射了，要求有get/set方法
          	 -->
-         	<param name="url">www.baidu.com</param>
         </action>
         
-        <action name="listPeople" class="com.alison.struts2.AddPersonAction">
+        <action name="listPeople" class="com.alison.struts2.ListPeopleAction" >
         	<result name="listAll" type="dispatcher">/listAllPeople.jsp</result>
         </action>
         
-        <action name="index" class="com.alison.struts2.IndexAction">
+        <action name="index" class="com.alison.struts2.IndexAction" method="execute">
         	<result name="index">/index.jsp</result>
         </action>
      	
