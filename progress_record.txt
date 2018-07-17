@@ -1,0 +1,7 @@
+======================
+记录每时工作的内容
+======================
+
+2018.7.17	公司
+	调试了addPerson的流程，，由于公司的mybatis没见hobby表，报Type interface com.alison.mybatis.HobbyMapper is not known to the MapperRegistry.错误
+	
