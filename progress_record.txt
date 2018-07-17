@@ -5,3 +5,8 @@
 2018.7.17	公司
 	调试了addPerson的流程，，由于公司的mybatis没见hobby表，报Type interface com.alison.mybatis.HobbyMapper is not known to the MapperRegistry.错误
 	
+20187.17	家里
+	调试通了addPerson的流程（包括hobbies），但是最终还是出现了在insert数据出现阻塞的情况（最后报了等待超时错误）,未解。。。
+	准备放一放，周末找老蔡问问；
+	开始着手实践书上的项目，找4~5个例子	----这周必须结束struts2学习，开始spring
+	
