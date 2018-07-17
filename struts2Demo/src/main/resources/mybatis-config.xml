@@ -26,7 +26,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	</environments>
 	
 	<mappers>
-		<!--  <mapper resource="com/alison/mybatis/hobbyMapper.xml"/>	 写的是路径名，包名的点号换成 / 路径分割 -->
+		<mapper resource="com/alison/mybatis/hobbyMapper.xml"/>	 <!-- 写的是路径名，包名的点号换成 / 路径分割 -->
 		<mapper resource="com/alison/mybatis/personMapper.xml"/>
 	</mappers>
 	

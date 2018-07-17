@@ -44,6 +44,8 @@ public class PersonAction extends ActionSupport {
 
 	}
 
+	
+	
 	public List<String> getHobbies() {
 		return hobbies;
 	}

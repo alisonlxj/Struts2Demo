@@ -17,7 +17,8 @@
 	<h3>成功添加了一名人员</h3>
 	<p/>
 	
-	<s:property value="person" />
+	<s:property value="person" /> <p/>
+	<s:property value="hobbies" />
 	
 </body>
 

@@ -16,6 +16,7 @@ public class PersonService {
 	public PersonService() throws IOException{
 		System.out.println("进入service");
 		pdao = new PersonDao();
+		hdao = new HobbyDao();
 	}
 	
 	public void addPerson(Person p, List<String> hobbies){
