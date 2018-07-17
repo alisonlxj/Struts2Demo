@@ -16,12 +16,15 @@ public class PersonService {
 	public PersonService() throws IOException{
 		System.out.println("进入service");
 		pdao = new PersonDao();
+		hdao = new HobbyDao();
 	}
 	
 	public void addPerson(Person p, List<String> hobbies){
 		pdao.addPerson(p);
 		for(String h : hobbies){
+			System.out.println(111);
 			Hobby hobby = new Hobby(h,p.getId());
+			System.out.println(hdao);
 			hdao.addHobby(hobby);
 		}
 	}
